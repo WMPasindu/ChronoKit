@@ -36,8 +36,9 @@ fromTimeZone and toTimeZone are strings representing the source and destination 
 
 ## performDateArithmetic(currentDate, { duration: number, unit: string, operation: string })
 <p>The performDateArithmetic function and call it with a date object and an options object specifying the arithmetic operation to perform. Here's an example.
-`unit = 'day' | 'week' | 'month'`
-`operation = 'add' | 'subtract'`
+
+* unit = 'day' | 'week' | 'month'
+* operation = 'add' | 'subtract'
 </p>
 
 ``` sh 
