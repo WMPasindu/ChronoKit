@@ -35,7 +35,10 @@ fromTimeZone and toTimeZone are strings representing the source and destination 
 <p>The getTimeZoneOffset function takes two parameters: timezone1 and timezone2. These parameters are strings representing the time zones for which the offset needs to be calculated.</p>
 
 ## performDateArithmetic(currentDate, { duration: number, unit: string, operation: string })
-<p>The performDateArithmetic function and call it with a date object and an options object specifying the arithmetic operation to perform. Here's an example.</p>
+<p>The performDateArithmetic function and call it with a date object and an options object specifying the arithmetic operation to perform. Here's an example.
+`unit = 'day' | 'week' | 'month'`
+`operation = 'add' | 'subtract'`
+</p>
 
 ``` sh 
 performDateArithmetic(currentDate, { duration: 2, unit: 'week', operation: 'add' });
