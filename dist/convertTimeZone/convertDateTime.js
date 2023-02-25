@@ -4,7 +4,7 @@ exports.getTimeZoneOffSet = exports.convertDateTime = void 0;
 const moment = require("moment-timezone");
 const convertDateTime = (dateTime, fromTimeZone, toTimeZone) => {
     const convertedDateTime = moment.tz(dateTime, fromTimeZone).tz(toTimeZone);
-    return convertedDateTime.format();
+    return convertedDateTime.format("YYYY-MM-DD HH:mm:ss z");
 };
 exports.convertDateTime = convertDateTime;
 const getTimeZoneOffSet = (timezone1, timezone2) => {

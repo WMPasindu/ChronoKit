@@ -1,6 +1,6 @@
 {
   "name": "chronokit",
-  "version": "1.0.5",
+  "version": "1.0.10",
   "description": "ChronoKit is a powerful and flexible date/time manipulation library that makes it easy to perform common tasks such as converting between time zones, calculating time difference, and parsing date/time strings. With a simple intuitive API, ChronoKit offers a wide range of features and options fro working with dates and time, making it an essential tool for any developer who needs to work with time-base data.",
   "main": "dist/index.js",
   "module": "dist/index.m.js",
@@ -10,23 +10,26 @@
     "require": "./dist/index.js",
     "default": "./dist/index.modern.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/WMPasindu/ChronoKit.git"
+  },
   "scripts": {
     "test": "npm test",
     "build": "rm -rf dist && microbundle --tsconfig.json --no-sourcemap",
     "dev": "microbundle --watch --tsconfig tsconfig.json --no-sourcemap"
   },
   "keywords": [
-    "Date/time",
-    "manipulation",
-    "Time",
-    "Zones",
-    "Date",
-    "Parsing",
-    "Time",
-    "Difference",
-    "Time",
-    "Zone",
-    "Rules"
+    "Date/time manipulation",
+    "Time Zones",
+    "Date/time Parsing",
+    "Time Difference",
+    "Time Zone",
+    "timezone management",
+    "UTC offset",
+    "JavaScript date/time",
+    "date/time APIs",
+    "daylight saving time"
   ],
   "author": "Pasindu Weerakoon",
   "license": "ISC",
