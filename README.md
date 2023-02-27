@@ -1,5 +1,5 @@
 # ChronoKit
-ChronoKit is a powerful and flexible date/time manipulation library that makes it easy to perform common tasks such as converting between time zones, calculating time difference, and parsing date/time strings. With a simple intuitive API, ChronoKit offers a wide range of features and options fro working with dates and time, making it an essential tool for any developer who needs to work with time-base data.
+ChronoKit is a powerful and flexible date/time manipulation library for Node.js. With an intuitive API, ChronoKit makes it easy to perform common tasks such as converting between time zones, calculating time differences, and parsing date/time strings. Whether you're building a web app, working with time-based data, or just need to handle dates and times in your code, ChronoKit has you covered.
 
 # Date/Time Manipulation Library
 A library that provides utility function with dates and time, including coverting between time zone, calculating time diference, and parsing date/time strings.
@@ -19,6 +19,7 @@ import {convertTimeZone, convertDateTime, getTimeZoneOffSet} from 'chronokit';
 const convertedTimeZone = convertTimeZone('2023-02-23T14:55:00Z', 'GMT', 'Australia/Darwin');
 const convertedDateTime = convertDateTime('2023-02-23T23:35:00', 'Asia/Colombo', 'Europe/London');
 const timeZoneOffSet = getTimeZoneOffSet('Asia/Colombo', 'Europe/London'); 
+const month = performDateArithmetic(currentDate, { duration: 5, unit: 'month', operation: 'subtract' });
 ```
 
 
@@ -36,9 +37,8 @@ fromTimeZone and toTimeZone are strings representing the source and destination 
 
 ## performDateArithmetic(currentDate, { duration: number, unit: string, operation: string })
 <p>The performDateArithmetic function and call it with a date object and an options object specifying the arithmetic operation to perform. Here's an example.
-
-* unit = 'day' | 'week' | 'month'
-* operation = 'add' | 'subtract'
+`unit = 'day' | 'week' | 'month'`
+`operation = 'add' | 'subtract'`
 </p>
 
 ``` sh 

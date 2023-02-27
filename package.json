@@ -20,14 +20,15 @@
     "dev": "microbundle --watch --tsconfig tsconfig.json --no-sourcemap"
   },
   "keywords": [
+    "date",
+    "time",
+    "JavaScript",
     "Date/time manipulation",
     "Time Zones",
     "Date/time Parsing",
     "Time Difference",
-    "Time Zone",
     "timezone management",
     "UTC offset",
-    "JavaScript date/time",
     "date/time APIs",
     "daylight saving time"
   ],
